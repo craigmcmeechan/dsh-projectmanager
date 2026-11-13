@@ -1,0 +1,28 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib/types",
+    "tsBuildInfoFile": "lib/tsconfig.host.tsbuildinfo"
+  },
+  "include": [
+  "src/index.ts",
+  "src/db",
+  "src/docker",
+  "src/features",
+  "src/machine",
+  "src/plugin",
+  "src/runner",
+  "src/scaffold",
+  "src/stages",
+  "src/store",
+  "src/target",
+  "src/tools"
+],
+  "references": [
+    { "path": "../../../vendor/cordis" },
+    { "path": "../../host/webserver" },
+    { "path": "../../util/home-paths" },
+    { "path": "../../core/tools" }
+  ]
+}

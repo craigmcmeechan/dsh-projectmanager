@@ -1,0 +1,6 @@
+# Enable the filesystem skill provider so runtime skills (the brainstorm skill)
+# can register. The web-app bundle disables it by default.
+- id: skill-filesystem
+  disabled: false
+- id: tool-skill
+  disabled: false
